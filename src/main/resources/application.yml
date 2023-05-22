@@ -1,0 +1,44 @@
+wx:
+    miniapp:
+        aesKey: '@aesKey'
+        appid: wx153b15e98d1abd18
+        config-storage:
+            http-client-type: HttpClient
+            http-proxy-host: ''
+            http-proxy-password: ''
+            http-proxy-port: ''
+            http-proxy-username: ''
+            key-prefix: wa
+            redis:
+                host: r-2zec5fi2f06wktsoizpd.redis.rds.aliyuncs.com
+                port: 6379
+                username: default
+                password: 009876Jyj
+            type: RedisTemplate
+        msgDataFormat: '@msgDataFormat'
+        secret: 'c7e4dc3394ac81b33238d21468b62986'
+        token: '@token'
+server:
+    port: 8080
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://rm-cn-zpr37vfvo0012p5o.rwlb.rds.aliyuncs.com:3306/shop?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=true
+        username: jyj
+        password: 941218Jyj
+    hikari:
+        max-lifetime: 500000
+    redis:
+        host: r-2zec5fi2f06wktsoizpd.redis.rds.aliyuncs.com
+        port: 6379
+        username: default
+        password: 009876Jyj
+mybatis:
+    configuration:
+        map-underscore-to-camel-case: true
+mybatis-plus:
+    global-config:
+        db-config:
+            #主键类型(auto:"自增id"，assign_id:"全局唯一id(雪花算法,Long或者String类型)"，assign_uuid:"全局唯一id(
+            #       无中划线的uuid)",input:"自行设置id,默认null",none:"不设置主键id")
+            id-type: assign_id

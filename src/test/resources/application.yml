@@ -1,0 +1,27 @@
+wx:
+    miniapp:
+        aesKey: '@aesKey'
+        appid: wx153b15e98d1abd18
+        config-storage:
+            http-client-type: HttpClient
+            http-proxy-host: ''
+            http-proxy-password: ''
+            http-proxy-port: ''
+            http-proxy-username: ''
+            key-prefix: wa
+            redis:
+                host: 127.0.0.1
+                port: 6379
+            type: RedisTemplate
+        msgDataFormat: '@msgDataFormat'
+        secret: 'c7e4dc3394ac81b33238d21468b62986'
+        token: '@token'
+server:
+    port: 8080
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://rm-cn-zpr37vfvo0012p5o.rwlb.rds.aliyuncs.com:3306/shop?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=true
+        username: jyj
+        password: 941218Jyj
+
